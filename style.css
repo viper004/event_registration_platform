@@ -1,0 +1,615 @@
+/* Simple & Clean Stylesheet for College Event Platform */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.btn-admin {
+    background-color: #f59e0b;
+    padding: 6px 14px;
+    border-radius: 4px;
+    color: #1e3a8a !important;
+    font-weight: bold !important;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Page Title & Banner */
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #666;
+}
+
+/* Event Cards Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background: white;
+    border-radius: 8px;
+    padding: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 4px solid #2563eb;
+}
+
+.event-card h3 {
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.event-info {
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin-bottom: 12px;
+}
+
+.event-info span {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.event-desc {
+    font-size: 0.92rem;
+    color: #6b7280;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: #6b7280;
+}
+
+.btn-secondary:hover {
+    background-color: #4b5563;
+}
+
+.btn-danger {
+    background-color: #dc2626;
+}
+
+.btn-danger:hover {
+    background-color: #b91c1c;
+}
+
+.btn-info {
+    background-color: #0284c7;
+}
+
+.btn-info:hover {
+    background-color: #0369a1;
+}
+
+.btn-success {
+    background-color: #16a34a;
+}
+
+.btn-success:hover {
+    background-color: #15803d;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+}
+
+.btn-outline:hover {
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+/* Form Styling */
+.form-card {
+    background: white;
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.form-group input[readonly] {
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
+
+.error-msg {
+    color: #dc2626;
+    background-color: #fee2e2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
+
+.success-msg {
+    color: #166534;
+    background-color: #dcfce7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
+
+/* Confirmation / Success Box */
+.success-card {
+    background: white;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    border-top: 5px solid #16a34a;
+}
+
+.success-icon {
+    font-size: 3rem;
+    color: #16a34a;
+    margin-bottom: 15px;
+}
+
+.summary-table {
+    width: 100%;
+    margin: 25px 0;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.summary-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.summary-table td.label {
+    font-weight: bold;
+    color: #4b5563;
+    width: 40%;
+}
+
+/* Admin Table */
+.table-responsive {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table.admin-table th {
+    background-color: #f8fafc;
+    padding: 14px 16px;
+    border-bottom: 2px solid #e2e8f0;
+    color: #475569;
+    font-size: 0.88rem;
+}
+
+table.admin-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.92rem;
+}
+
+table.admin-table tr:hover {
+    background-color: #f8fafc;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Event Registrations Details & Subtable Styles */
+.badge-reg {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 1px solid #bae6fd;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.badge-reg:hover {
+    background: #bae6fd;
+    color: #0c4a6e;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.badge-reg.empty {
+    background: #f1f5f9;
+    color: #94a3b8;
+    border-color: #e2e8f0;
+    cursor: default;
+}
+
+.badge-reg.empty:hover {
+    background: #f1f5f9;
+    color: #94a3b8;
+    box-shadow: none;
+}
+
+.event-registrations-row td {
+    padding: 0 !important;
+    background-color: #f8fafc;
+    border-bottom: 2px solid #cbd5e1 !important;
+}
+
+.attendees-container {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    padding: 22px;
+    margin: 14px 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.attendees-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.attendees-title-wrap h3 {
+    color: #1e3a8a;
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.attendees-subtitle {
+    color: #64748b;
+    font-size: 0.88rem;
+}
+
+.attendees-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.attendee-search-input {
+    padding: 7px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    width: 240px;
+    max-width: 100%;
+}
+
+.attendee-search-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.attendee-subtable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.attendee-subtable th {
+    background-color: #f1f5f9;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: #475569;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 2px solid #e2e8f0;
+    text-align: left;
+}
+
+.attendee-subtable td {
+    padding: 11px 14px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+.attendee-subtable tr:last-child td {
+    border-bottom: none;
+}
+
+.attendee-subtable tr:hover {
+    background-color: #f8fafc;
+}
+
+.empty-attendees-state {
+    padding: 24px;
+    text-align: center;
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 6px;
+    color: #64748b;
+    font-size: 0.92rem;
+}
+
+/* Modal Popup Dialog */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(2px);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 850px;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: modalSlideIn 0.2s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-header {
+    padding: 16px 24px;
+    background-color: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal-close-btn {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.6rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 6px;
+    border-radius: 4px;
+}
+
+.modal-close-btn:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.modal-body {
+    padding: 20px 24px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.modal-footer {
+    padding: 14px 24px;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* Print Stylesheet - Turns Web Page into Clean PDF / Printed Ticket */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt;
+    }
+
+    /* Hide UI navigation, buttons, and footer */
+    .navbar,
+    footer,
+    .btn,
+    .nav-links,
+    .attendee-search-input {
+        display: none !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .success-card {
+        box-shadow: none !important;
+        border: 2px solid #2563eb !important;
+        border-radius: 8px !important;
+        padding: 25px !important;
+        margin: 20px auto !important;
+        max-width: 90% !important;
+        page-break-inside: avoid;
+    }
+
+    .summary-table {
+        border: 1px solid #e2e8f0;
+        margin-top: 15px;
+    }
+
+    .summary-table td {
+        padding: 8px 12px;
+        border-bottom: 1px solid #cbd5e1;
+    }
+
+    /* Remove hyperlink URLs that some browsers auto-append */
+    a[href]:after {
+        content: none !important;
+    }
+}
